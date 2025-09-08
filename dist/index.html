@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Смелые Панды</title>
+    <!-- Сброс стилей -->
+    <!-- Основные стили -->
+    <link rel="stylesheet" crossorigin href="/assets/index-DzOa5ysW.css">
+  </head>
+  <body>
+    <!-- Шапка -->
+    <header class="header">
+      <div class="header__wrapper wrapper">
+        <a href="/" class="header__logo"
+          ><img src="/logo-2.png" alt="Смелые Панды" class="header__logo"
+        /></a>
+        <input
+          type="checkbox"
+          id="nav-toggle"
+          class="header__toggle"
+          aria-label="Переключить меню"
+        />
+        <label
+          for="nav-toggle"
+          class="header__burger"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </label>
+        <nav class="header__nav nav" id="primary-navigation">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#services" class="nav__link">Программы</a>
+            </li>
+            <li class="nav__item">
+              <a href="#team" class="nav__link">Команда</a>
+            </li>
+            <li class="nav__item">
+              <a href="#reviews" class="nav__link">Отзывы</a>
+            </li>
+            <li class="nav__item">
+              <a href="#faq" class="nav__link">FAQ</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacts" class="nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="tel:+79518926463" class="header__cta button"
+          >Записаться на пробное</a
+        >
+      </div>
+    </header>
+
+    <!-- Main block -->
+    <main class="main">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero__wrapper wrapper">
+          <div class="hero__main">
+            <h1 class="hero__title">
+              Растим <span class="title_green">сильных</span><br />и
+              <span class="title_orange">смелых</span> детей
+            </h1>
+            <p class="hero__subtitle">
+              Профессиональные тренировки для детей от 1 года. Развиваем
+              физические навыки, уверенность в себе и любовь к спорту в
+              безопасной и дружелюбной атмосфере.
+            </p>
+            <div class="hero__buttons buttons">
+              <a href="tel:+79518926463" class="hero__button_primary button"
+                >Записаться на пробное занятие
+                <svg class="hero__arrow-icon" viewBox="0 0 24 24">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 12h14m-6-7l7 7-7 7"
+                  />
+                </svg>
+              </a>
+              <a href="#services" class="hero__button_secondary button"
+                >Смотреть программы</a
+              >
+            </div>
+            <div class="hero__after">
+              <div class="hero__divider"></div>
+              <ul class="hero__stats">
+                <li class="hero__stat">
+                  <span class="hero__stat-value">500+</span
+                  ><span class="hero__stat-label">Счастливых детей</span>
+                </li>
+                <li class="hero__stat">
+                  <span class="hero__stat-value">10</span
+                  ><span class="hero__stat-label">Программ</span>
+                </li>
+                <li class="hero__stat">
+                  <span class="hero__stat-value">7</span
+                  ><span class="hero__stat-label">Лет опыта</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="hero__image-container">
+            <img
+              src="/assets/main-BC60ZFbC.jpg"
+              alt="Brave Pandas"
+              class="hero__image"
+            />
+            <div
+              class="hero__decorative-circle hero__decorative-circle--top-right"
+            ></div>
+            <div
+              class="hero__decorative-circle hero__decorative-circle--bottom-left"
+            ></div>
+          </div>
+        </div>
+        <svg
+          aria-hidden="true"
+          class="hero__wave"
+          preserveAspectRatio="none"
+          viewBox="0 0 1440 90"
+        >
+          <path
+            fill="#f6fbf2"
+            d="M0 64C240 96 480 0 720 32s480 80 720 32v56H0z"
+          />
+        </svg>
+      </section>
+
+      <!-- Programs / Services -->
+      <section id="services" class="programs">
+        <div class="programs__wrapper wrapper">
+          <div class="programs__badge badge">Наши программы</div>
+          <h2 class="programs__title">Программы для всех возрастов</h2>
+          <p class="programs__subtitle">
+            От первых шагов до профессиональных навыков – мы предлагаем
+            разнообразные программы для гармоничного развития вашего ребёнка
+          </p>
+          <ul class="programs__list">
+            <li class="programs__item program-card">
+              <div class="program-card__badge program-card__badge--yellow">
+                1–2 года
+              </div>
+              <img
+                class="program-card__image"
+                src="https://picsum.photos/seed/kids2/560/360"
+                alt="Мама и малыш на занятиях"
+              />
+
+              <h3 class="program-card__title">Мама и малыш</h3>
+              <p class="program-card__desc">
+                Первые спортивные шаги вместе с мамой. Развиваем координацию,
+                моторику и укрепляем связь между родителем и ребёнком.
+              </p>
+              <div class="program-card__price">от 2500₽/мес</div>
+              <a href="#" class="program-card__more">Подробнее →</a>
+            </li>
+            <li class="programs__item program-card">
+              <div class="program-card__badge program-card__badge--green">
+                2–3 года
+              </div>
+              <img
+                class="program-card__image"
+                src="https://picsum.photos/seed/kids2/560/360"
+                alt="ОФП с родителем"
+              />
+              <h3 class="program-card__title">ОФП с родителем</h3>
+              <p class="program-card__desc">
+                Общая физическая подготовка в игровой форме. Развиваем силу,
+                выносливость и гибкость под присмотром родителей.
+              </p>
+              <div class="program-card__price">от 3000₽/мес</div>
+              <a href="#" class="program-card__more">Подробнее →</a>
+            </li>
+            <li class="programs__item program-card">
+              <div class="program-card__badge program-card__badge--orange">
+                Все возрасты
+              </div>
+              <img
+                class="program-card__image"
+                src="https://picsum.photos/seed/kids3/560/360"
+                alt="Здоровые ножки"
+              />
+              <h3 class="program-card__title">Здоровые ножки</h3>
+              <p class="program-card__desc">
+                Специальная программа для профилактики плоскостопия и укрепления
+                стоп. Включает массаж и лечебную физкультуру.
+              </p>
+              <div class="program-card__price">от 2800₽/мес</div>
+              <a href="#" class="program-card__more">Подробнее →</a>
+            </li>
+            <li class="programs__item program-card">
+              <div class="program-card__badge program-card__badge--purple">
+                4+ лет
+              </div>
+              <img
+                class="program-card__image"
+                src="https://picsum.photos/seed/kids4/560/360"
+                alt="Гимнастика и ОФП"
+              />
+              <h3 class="program-card__title">Гимнастика и ОФП</h3>
+              <p class="program-card__desc">
+                Развитие гибкости, координации и акробатических навыков. Основа
+                для многих видов спорта и красивой осанки.
+              </p>
+              <div class="program-card__price">от 3500₽/мес</div>
+              <a href="#" class="program-card__more">Подробнее →</a>
+            </li>
+            <li class="programs__item program-card">
+              <div class="program-card__badge program-card__badge--black">
+                6+ лет
+              </div>
+              <img
+                class="program-card__image"
+                src="https://picsum.photos/seed/kids5/560/360"
+                alt="Дзюдо (самооборона)"
+              />
+              <h3 class="program-card__title">Дзюдо (самооборона)</h3>
+              <p class="program-card__desc">
+                Изучаем основы самообороны и восточных единоборств. Воспитываем
+                дисциплину, уверенность и уважение.
+              </p>
+              <div class="program-card__price">от 4000₽/мес</div>
+              <a href="#" class="program-card__more">Подробнее →</a>
+            </li>
+            <li class="programs__item program-card">
+              <div class="program-card__badge program-card__badge--blue">
+                5+ лет
+              </div>
+              <img
+                class="program-card__image"
+                src="https://picsum.photos/seed/kids6/560/360"
+                alt="Йога для детей"
+              />
+              <h3 class="program-card__title">Йога для детей</h3>
+              <p class="program-card__desc">
+                Развиваем гибкость, баланс и учимся расслабляться. Йога помогает
+                детям справляться со стрессом и улучшает концентрацию.
+              </p>
+              <div class="program-card__price">от 3200₽/мес</div>
+              <a href="#" class="program-card__more">Подробнее →</a>
+            </li>
+          </ul>
+          <div class="programs__cta">
+            <div class="programs__cta-content">
+              <h3 class="programs__cta-title">
+                Не нашли подходящую программу?
+              </h3>
+              <p class="programs__cta-text">
+                Мы также предлагаем индивидуальные занятия, летние лагеря и
+                специальные программы. Свяжитесь с нами для консультации!
+              </p>
+              <div class="programs__cta-actions">
+                <a href="#" class="button programs__cta-button"
+                  >Записаться на пробное занятие</a
+                >
+                <a
+                  href="#"
+                  class="button programs__cta-button programs__cta-button--outline"
+                  >Получить консультацию</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trainers -->
+      <section id="team" class="trainers trainers--new">
+        <div class="trainers__wrapper wrapper">
+          <div class="trainers__badge badge">Наша команда</div>
+          <h2 class="trainers__title">Познакомьтесь с нашими тренерами</h2>
+          <p class="trainers__subtitle">
+            Наши сертифицированные специалисты имеют многолетний опыт работы с
+            детьми и готовы помочь вашему ребенку достичь новых высот
+          </p>
+          <ul class="trainers__list trainers__list--new">
+            <li class="trainer-card-new">
+              <img
+                class="trainer-card-new__image"
+                src="https://picsum.photos/seed/trainer1/400/300"
+                alt="Анна Петрова"
+              />
+              <div class="trainer-card-new__content">
+                <h3 class="trainer-card-new__name">Анна Петрова</h3>
+                <p class="trainer-card-new__role">Детский фитнес-тренер</p>
+                <div class="trainer-card-new__rating">
+                  <span class="trainer-card-new__stars">★★★★★</span>
+                  <span class="trainer-card-new__score">5.0</span>
+                  <span class="trainer-card-new__reviews">(9 отзывов)</span>
+                </div>
+                <p class="trainer-card-new__desc">
+                  7+ лет опыта работы с детьми. Специализируется на общей
+                  физической подготовке и программах "мама+малыш".
+                  Сертифицированный тренер по детскому фитнесу.
+                </p>
+                <div class="trainer-card-new__tags">
+                  <span class="trainer-card-new__tag">ОФП</span>
+                  <span class="trainer-card-new__tag">Мама+малыш</span>
+                  <span class="trainer-card-new__tag">Здоровые ножки</span>
+                </div>
+                <a href="#" class="trainer-card-new__more">Подробнее →</a>
+              </div>
+            </li>
+            <li class="trainer-card-new">
+              <img
+                class="trainer-card-new__image"
+                src="https://picsum.photos/seed/trainer2/400/300"
+                alt="Михаил Соколов"
+              />
+              <div class="trainer-card-new__content">
+                <h3 class="trainer-card-new__name">Михаил Соколов</h3>
+                <p class="trainer-card-new__role">Тренер по единоборствам</p>
+                <div class="trainer-card-new__rating">
+                  <span class="trainer-card-new__stars">★★★★★</span>
+                  <span class="trainer-card-new__score">5.0</span>
+                  <span class="trainer-card-new__reviews">(124 отзыва)</span>
+                </div>
+                <p class="trainer-card-new__desc">
+                  Мастер спорта по дзюдо, 12 лет тренерского стажа. Работает с
+                  детьми от 6 лет, воспитывает дисциплину и готовит к
+                  соревнованиям.
+                </p>
+                <div class="trainer-card-new__tags">
+                  <span class="trainer-card-new__tag">Дзюдо</span>
+                  <span class="trainer-card-new__tag">Самооборона</span>
+                  <span class="trainer-card-new__tag">ОФП</span>
+                </div>
+                <a href="#" class="trainer-card-new__more">Подробнее →</a>
+              </div>
+            </li>
+            <li class="trainer-card-new">
+              <img
+                class="trainer-card-new__image"
+                src="https://picsum.photos/seed/trainer3/400/300"
+                alt="Елена Морозова"
+              />
+              <div class="trainer-card-new__content">
+                <h3 class="trainer-card-new__name">Елена Морозова</h3>
+                <p class="trainer-card-new__role">Тренер по гимнастике</p>
+                <div class="trainer-card-new__rating">
+                  <span class="trainer-card-new__stars">★★★★☆</span>
+                  <span class="trainer-card-new__score">4.9</span>
+                  <span class="trainer-card-new__reviews">(76 отзывов)</span>
+                </div>
+                <p class="trainer-card-new__desc">
+                  КМС по художественной гимнастике, инструктор по йоге для
+                  детей. 9 лет опыта работы с детьми разных возрастов.
+                </p>
+                <div class="trainer-card-new__tags">
+                  <span class="trainer-card-new__tag">Гимнастика</span>
+                  <span class="trainer-card-new__tag">Йога</span>
+                  <span class="trainer-card-new__tag">Растяжка</span>
+                </div>
+                <a href="#" class="trainer-card-new__more">Подробнее →</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Reviews / Testimonials Carousel -->
+      <section id="reviews" class="reviews">
+        <div class="reviews__wrapper wrapper">
+          <div class="reviews__badge badge">Отзывы родителей</div>
+          <h2 class="reviews__title">Что говорят наши родители</h2>
+          <p class="reviews__subtitle">
+            Короткие реальные истории о том, как меняются дети на наших занятиях
+          </p>
+
+          <div class="reviews__carousel" aria-roledescription="carousel">
+            <button class="reviews__nav reviews__nav--prev" aria-label="Назад">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  fill="currentColor"
+                  d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+                />
+              </svg>
+            </button>
+            <div class="reviews__track" role="group">
+              <article class="review">
+                <p class="review__text">
+                  Ребёнок с радостью идёт на тренировки, стал выносливее и
+                  увереннее в себе. Спасибо тренерам за подход!
+                </p>
+                <footer class="review__author">Анна, мама Ильи (6 лет)</footer>
+              </article>
+              <article class="review">
+                <p class="review__text">
+                  Очень бережная атмосфера и игровой формат. Уже через месяц
+                  заметили прогресс.
+                </p>
+                <footer class="review__author">
+                  Дмитрий, папа Маши (4 года)
+                </footer>
+              </article>
+              <article class="review">
+                <p class="review__text">
+                  Рекомендую всем друзьям: сильные тренеры и внимательное
+                  отношение к каждому ребёнку.
+                </p>
+                <footer class="review__author">
+                  Елена, мама Тимура (8 лет)
+                </footer>
+              </article>
+              <article class="review">
+                <p class="review__text">
+                  Ребёнок полюбил спорт, появились новые друзья и цель —
+                  участвовать в соревнованиях!
+                </p>
+                <footer class="review__author">Олег, папа Вари (7 лет)</footer>
+              </article>
+            </div>
+            <button class="reviews__nav reviews__nav--next" aria-label="Вперёд">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  fill="currentColor"
+                  d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div
+            class="reviews__dots"
+            role="tablist"
+            aria-label="Навигация по отзывам"
+          ></div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta">
+        <div class="cta__wrapper wrapper">
+          <h2 class="cta__title">Готовы на пробное занятие?</h2>
+          <p class="cta__text">
+            Позвоните нам или оставьте заявку — подберем удобное время и группу.
+          </p>
+          <div class="cta__actions">
+            <a href="tel:+79518926463" class="button cta__button_primary"
+              >Позвонить тренеру</a
+            >
+            <a href="#contacts" class="button cta__button_secondary"
+              >Узнать расписание</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="faq">
+        <div class="faq__wrapper wrapper">
+          <div class="faq__badge badge">Часто задаваемые вопросы</div>
+          <h2 class="faq__title">Ответы на ваши вопросы</h2>
+          <p class="faq__subtitle">
+            Собрали самые популярные вопросы от родителей. Если не нашли ответ —
+            звоните, мы с радостью расскажем подробнее!
+          </p>
+          <ul class="faq__list">
+            <li class="faq__item">
+              <button class="faq__question" aria-expanded="false">
+                С какого возраста можно начинать заниматься?
+              </button>
+              <div class="faq__answer">
+                Мы принимаем детей с 1 года. Для малышей занятия проходят в
+                игровой форме с родителями.
+              </div>
+            </li>
+            <li class="faq__item">
+              <button class="faq__question" aria-expanded="false">
+                Что нужно взять с собой на первое занятие?
+              </button>
+              <div class="faq__answer">
+                Удобную спортивную одежду, сменную обувь и хорошее настроение!
+              </div>
+            </li>
+            <li class="faq__item">
+              <button class="faq__question" aria-expanded="false">
+                Сколько детей в группе?
+              </button>
+              <div class="faq__answer">
+                В среднем 8–12 детей, чтобы тренер мог уделить внимание каждому.
+              </div>
+            </li>
+            <li class="faq__item">
+              <button class="faq__question" aria-expanded="false">
+                Можно ли заморозить абонемент?
+              </button>
+              <div class="faq__answer">
+                Да, вы можете приостановить действие абонемента по уважительной
+                причине.
+              </div>
+            </li>
+            <li class="faq__item">
+              <button class="faq__question" aria-expanded="false">
+                Есть ли медицинские противопоказания?
+              </button>
+              <div class="faq__answer">
+                Перед началом занятий рекомендуем проконсультироваться с врачом.
+              </div>
+            </li>
+            <li class="faq__item">
+              <button class="faq__question" aria-expanded="false">
+                Как проходят занятия для самых маленьких?
+              </button>
+              <div class="faq__answer">
+                В игровой форме, с участием родителей, с акцентом на развитие
+                моторики и координации.
+              </div>
+            </li>
+          </ul>
+          <div class="faq__cta">
+            <p>Не нашли ответ на свой вопрос?</p>
+            <a href="tel:+79518926463" class="button faq__button"
+              >Позвонить сейчас</a
+            >
+            <a href="#contacts" class="button faq__button faq__button--outline"
+              >Написать нам</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer-extended">
+      <div class="footer-extended__wrapper wrapper">
+        <div class="footer-extended__about">
+          <img
+            src="/logo-2.png"
+            alt="Смелые Панды"
+            class="footer-extended__logo"
+          />
+          <p class="footer-extended__desc">
+            Детская спортивная школа "Смелые Панды" — место, где ваш ребенок
+            откроет для себя спорт, найдет новых друзей и станет увереннее в
+            себе.
+          </p>
+          <div class="footer-extended__socials">
+            <a href="#" class="footer-extended__social" aria-label="VK"
+              ><svg width="24" height="24">
+                <circle cx="12" cy="12" r="12" fill="#047a3e" /></svg
+            ></a>
+            <a href="#" class="footer-extended__social" aria-label="Telegram"
+              ><svg width="24" height="24">
+                <circle cx="12" cy="12" r="12" fill="#ed8c45" /></svg
+            ></a>
+            <a href="#" class="footer-extended__social" aria-label="WhatsApp"
+              ><svg width="24" height="24">
+                <circle cx="12" cy="12" r="12" fill="#047a3e" /></svg
+            ></a>
+          </div>
+        </div>
+        <div class="footer-extended__nav">
+          <h4>Навигация</h4>
+          <ul>
+            <li><a href="#services">Наши программы</a></li>
+            <li><a href="#team">Наша команда</a></li>
+            <li><a href="#reviews">Отзывы родителей</a></li>
+            <li><a href="#faq">Часто задаваемые вопросы</a></li>
+          </ul>
+        </div>
+        <div id="contacts" class="footer-extended__contacts">
+          <h4>Контакты</h4>
+          <p>
+            г. Казань<br />
+            проспект Альберта Камалеева, 8
+          </p>
+          <p><a href="tel:+79518926463">+7 (951) 892-64-63</a></p>
+          <p><a href="mailto:info@bravepandas.ru">info@bravepandas.ru</a></p>
+          <p>WhatsApp</p>
+          <p>Пн-Пт: 9:00–21:00<br />Сб-Вс: 10:00–17:00</p>
+        </div>
+        <div class="footer-extended__subscribe">
+          <h4>Новости и акции</h4>
+          <a href="#" class="button footer-extended__trial"
+            >Бесплатное пробное занятие</a
+          >
+        </div>
+      </div>
+      <div class="footer-extended__bottom wrapper">
+        <p>&copy; 2025 Смелые Панды. Все права защищены.</p>
+        <ul class="footer-extended__legal">
+          <li><a href="#">Политика конфиденциальности</a></li>
+          <li><a href="#">Условия использования</a></li>
+          <li><a href="#">Публичная оферта</a></li>
+        </ul>
+      </div>
+    </footer>
+    <button class="back-to-top" aria-label="Наверх" title="Наверх">
+      <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 5l-7 7h4v7h6v-7h4z" fill="#fff"></path>
+      </svg>
+    </button>
+    <!-- <script type="module" src="/src/main.js"></script> -->
+    <script src="/src/shared/lib/faq.js"></script>
+    <script src="/src/shared/lib/pricing.js"></script>
+    <script src="/src/shared/lib/backToTop.js"></script>
+    <script src="/src/shared/lib/reviewsCarousel.js"></script>
+  </body>
+</html>
