@@ -36,13 +36,25 @@
         <nav class="header__nav nav" id="primary-navigation">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#about" class="nav__link">О нас</a>
+              <a href="#services" class="nav__link">Программы</a>
             </li>
             <li class="nav__item">
-              <a href="#services" class="nav__link">Услуги</a>
+              <a href="#team" class="nav__link">Команда</a>
+            </li>
+            <li class="nav__item">
+              <a href="#reviews" class="nav__link">Отзывы</a>
+            </li>
+            <li class="nav__item">
+              <a href="#faq" class="nav__link">FAQ</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacts" class="nav__link">Контакты</a>
             </li>
           </ul>
         </nav>
+        <a href="tel:+79518926463" class="header__cta button"
+          >Записаться на пробное</a
+        >
       </div>
     </header>
 
@@ -79,20 +91,55 @@
                 >Смотреть программы</a
               >
             </div>
+            <div class="hero__after">
+              <div class="hero__divider"></div>
+              <ul class="hero__stats">
+                <li class="hero__stat">
+                  <span class="hero__stat-value">500+</span
+                  ><span class="hero__stat-label">Счастливых детей</span>
+                </li>
+                <li class="hero__stat">
+                  <span class="hero__stat-value">10</span
+                  ><span class="hero__stat-label">Программ</span>
+                </li>
+                <li class="hero__stat">
+                  <span class="hero__stat-value">7</span
+                  ><span class="hero__stat-label">Лет опыта</span>
+                </li>
+              </ul>
+            </div>
           </div>
-          <img
-            src="./src/shared/assets/images/main.jpg"
-            alt="Brave Pandas"
-            class="hero__image"
-          />
+          <div class="hero__image-container">
+            <img
+              src="./src/shared/assets/images/main.jpg"
+              alt="Brave Pandas"
+              class="hero__image"
+            />
+            <div
+              class="hero__decorative-circle hero__decorative-circle--top-right"
+            ></div>
+            <div
+              class="hero__decorative-circle hero__decorative-circle--bottom-left"
+            ></div>
+          </div>
         </div>
-        <div style="overflow: hidden"></div>
+        <svg
+          aria-hidden="true"
+          class="hero__wave"
+          preserveAspectRatio="none"
+          viewBox="0 0 1440 90"
+        >
+          <path
+            fill="#f6fbf2"
+            d="M0 64C240 96 480 0 720 32s480 80 720 32v56H0z"
+          />
+        </svg>
       </section>
 
       <!-- Programs / Services -->
       <section id="services" class="programs">
         <div class="programs__wrapper wrapper">
-          <div class="programs__badge">Наши программы</div>
+          <div class="programs__badge badge">Наши программы</div>
           <h2 class="programs__title">Программы для всех возрастов</h2>
           <p class="programs__subtitle">
             От первых шагов до профессиональных навыков – мы предлагаем
@@ -103,9 +150,12 @@
               <div class="program-card__badge program-card__badge--yellow">
                 1–2 года
               </div>
-              <div class="program-card__badge program-card__badge--top">
-                Мама и малыш на занятиях
-              </div>
+              <img
+                class="program-card__image"
+                src="https://picsum.photos/seed/kids2/560/360"
+                alt="Мама и малыш на занятиях"
+              />
+
               <h3 class="program-card__title">Мама и малыш</h3>
               <p class="program-card__desc">
                 Первые спортивные шаги вместе с мамой. Развиваем координацию,
@@ -225,9 +275,9 @@
       </section>
 
       <!-- Trainers -->
-      <section class="trainers trainers--new">
+      <section id="team" class="trainers trainers--new">
         <div class="trainers__wrapper wrapper">
-          <div class="trainers__badge">Наша команда</div>
+          <div class="trainers__badge badge">Наша команда</div>
           <h2 class="trainers__title">Познакомьтесь с нашими тренерами</h2>
           <p class="trainers__subtitle">
             Наши сертифицированные специалисты имеют многолетний опыт работы с
@@ -315,190 +365,86 @@
               </div>
             </li>
           </ul>
-
-          <div class="trainers-why">
-            <div class="trainers-why__info">
-              <h3 class="trainers-why__title">
-                Почему родители выбирают наших тренеров?
-              </h3>
-              <div class="trainers-why__stats">
-                <div class="trainers-why__stat">
-                  <div
-                    class="trainers-why__icon trainers-why__icon--green"
-                  ></div>
-                  <div class="trainers-why__stat-value">100%</div>
-                  <div class="trainers-why__stat-label">Сертифицированы</div>
-                </div>
-                <div class="trainers-why__stat">
-                  <div
-                    class="trainers-why__icon trainers-why__icon--orange"
-                  ></div>
-                  <div class="trainers-why__stat-value">8+</div>
-                  <div class="trainers-why__stat-label">Лет опыта</div>
-                </div>
-                <div class="trainers-why__stat">
-                  <div
-                    class="trainers-why__icon trainers-why__icon--yellow"
-                  ></div>
-                  <div class="trainers-why__stat-value">50+</div>
-                  <div class="trainers-why__stat-label">Побед учеников</div>
-                </div>
-                <div class="trainers-why__stat">
-                  <div
-                    class="trainers-why__icon trainers-why__icon--blue"
-                  ></div>
-                  <div class="trainers-why__stat-value">98%</div>
-                  <div class="trainers-why__stat-label">
-                    Довольных родителей
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="trainers-why__photo-block">
-              <img
-                class="trainers-why__photo"
-                src="https://picsum.photos/seed/team/400/200"
-                alt="Наша команда"
-              />
-              <a href="#" class="button trainers-why__button"
-                >Познакомиться со всей командой →</a
-              >
-            </div>
-          </div>
         </div>
       </section>
 
-      <!-- Pricing / Tariffs -->
-      <section class="pricing">
-        <div class="pricing__wrapper wrapper">
-          <h2 class="pricing__title">Доступные тарифы для всех</h2>
-          <p class="pricing__subtitle">
-            Выберите подходящий пакет занятий. Все программы включают
-            индивидуальный подход и профессиональное оборудование.
+      <!-- Reviews / Testimonials Carousel -->
+      <section id="reviews" class="reviews">
+        <div class="reviews__wrapper wrapper">
+          <div class="reviews__badge badge">Отзывы родителей</div>
+          <h2 class="reviews__title">Что говорят наши родители</h2>
+          <p class="reviews__subtitle">
+            Короткие реальные истории о том, как меняются дети на наших занятиях
           </p>
-          <ul class="pricing__list">
-            <li class="pricing__item pricing-card" data-popular="false">
-              <h3 class="pricing-card__title">Разовое занятие</h3>
-              <div class="pricing-card__price">800₽</div>
-              <ul class="pricing-card__features">
-                <li>Продолжительность 45–60 минут</li>
-                <li>Всё необходимое оборудование</li>
-                <li>Индивидуальный подход</li>
-                <li>Консультация тренера</li>
-              </ul>
-              <button class="button pricing-card__button">Записаться</button>
-            </li>
-            <li
-              class="pricing__item pricing-card pricing-card--popular"
-              data-popular="true"
-            >
-              <div class="pricing-card__badge">Популярно</div>
-              <h3 class="pricing-card__title">Абонемент на месяц</h3>
-              <div class="pricing-card__price">
-                5600₽ <span class="pricing-card__price-note">(8 занятий)</span>
-              </div>
-              <ul class="pricing-card__features">
-                <li>3 занятия в неделю</li>
-                <li>Персональная программа развития</li>
-                <li>Отчёты о прогрессе ребёнка</li>
-                <li>Возможность заморозки абонемента</li>
-                <li>Скидка 10% на доп. услуги</li>
-              </ul>
-              <button class="button pricing-card__button">Выбрать план</button>
-            </li>
-            <li class="pricing__item pricing-card" data-popular="false">
-              <h3 class="pricing-card__title">Безлимитный</h3>
-              <div class="pricing-card__price">
-                8500₽ <span class="pricing-card__price-note">в месяц</span>
-              </div>
-              <ul class="pricing-card__features">
-                <li>Безлимитное посещение</li>
-                <li>Все групповые программы</li>
-                <li>Индивидуальные занятия</li>
-                <li>Скидка 20% на лагерь</li>
-                <li>Приоритетная запись</li>
-              </ul>
-              <button
-                class="button pricing-card__button pricing-card__button--outline"
+
+          <div class="reviews__carousel" aria-roledescription="carousel">
+            <button class="reviews__nav reviews__nav--prev" aria-label="Назад">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
               >
-                Узнать подробнее
-              </button>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Advantages / About -->
-      <section id="about" class="advantages">
-        <div class="advantages__wrapper wrapper">
-          <h2 class="advantages__title">Почему родители выбирают нас</h2>
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <img
-                class="advantages__icon"
-                src="https://picsum.photos/seed/safe/64"
-                alt="Безопасно"
-              />
-              <h3 class="advantages__item-title">Безопасная среда</h3>
-              <p class="advantages__item-text">
-                Занятия под контролем тренеров, сертифицированное покрытие и
-                инвентарь.
-              </p>
-            </li>
-            <li class="advantages__item">
-              <img
-                class="advantages__icon"
-                src="https://picsum.photos/seed/coach/64"
-                alt="Тренеры"
-              />
-              <h3 class="advantages__item-title">Опытные тренеры</h3>
-              <p class="advantages__item-text">
-                Персональный подход к каждому ребенку и мотивация без давления.
-              </p>
-            </li>
-            <li class="advantages__item">
-              <img
-                class="advantages__icon"
-                src="https://picsum.photos/seed/fun/64"
-                alt="Игровой формат"
-              />
-              <h3 class="advantages__item-title">Игровой формат</h3>
-              <p class="advantages__item-text">
-                Развитие силы, координации и выносливости через игру.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Testimonials -->
-      <section class="testimonials">
-        <div class="testimonials__wrapper wrapper">
-          <h2 class="testimonials__title">Отзывы родителей</h2>
-          <ul class="testimonials__list">
-            <li class="testimonials__item">
-              <blockquote class="testimonial">
-                <p class="testimonial__text">
-                  Ребенок идет на тренировки с горящими глазами. Видим прогресс
-                  уже через месяц!
+                <path
+                  fill="currentColor"
+                  d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+                />
+              </svg>
+            </button>
+            <div class="reviews__track" role="group">
+              <article class="review">
+                <p class="review__text">
+                  Ребёнок с радостью идёт на тренировки, стал выносливее и
+                  увереннее в себе. Спасибо тренерам за подход!
                 </p>
-                <footer class="testimonial__author">
-                  — Анна, мама Ильи (6 лет)
-                </footer>
-              </blockquote>
-            </li>
-            <li class="testimonials__item">
-              <blockquote class="testimonial">
-                <p class="testimonial__text">
-                  Очень бережный подход тренеров и классная атмосфера.
-                  Рекомендуем!
+                <footer class="review__author">Анна, мама Ильи (6 лет)</footer>
+              </article>
+              <article class="review">
+                <p class="review__text">
+                  Очень бережная атмосфера и игровой формат. Уже через месяц
+                  заметили прогресс.
                 </p>
-                <footer class="testimonial__author">
-                  — Дмитрий, папа Маши (4 года)
+                <footer class="review__author">
+                  Дмитрий, папа Маши (4 года)
                 </footer>
-              </blockquote>
-            </li>
-          </ul>
+              </article>
+              <article class="review">
+                <p class="review__text">
+                  Рекомендую всем друзьям: сильные тренеры и внимательное
+                  отношение к каждому ребёнку.
+                </p>
+                <footer class="review__author">
+                  Елена, мама Тимура (8 лет)
+                </footer>
+              </article>
+              <article class="review">
+                <p class="review__text">
+                  Ребёнок полюбил спорт, появились новые друзья и цель —
+                  участвовать в соревнованиях!
+                </p>
+                <footer class="review__author">Олег, папа Вари (7 лет)</footer>
+              </article>
+            </div>
+            <button class="reviews__nav reviews__nav--next" aria-label="Вперёд">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  fill="currentColor"
+                  d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div
+            class="reviews__dots"
+            role="tablist"
+            aria-label="Навигация по отзывам"
+          ></div>
         </div>
       </section>
 
@@ -521,8 +467,9 @@
       </section>
 
       <!-- FAQ -->
-      <section class="faq">
+      <section id="faq" class="faq">
         <div class="faq__wrapper wrapper">
+          <div class="faq__badge badge">Часто задаваемые вопросы</div>
           <h2 class="faq__title">Ответы на ваши вопросы</h2>
           <p class="faq__subtitle">
             Собрали самые популярные вопросы от родителей. Если не нашли ответ —
@@ -592,9 +539,6 @@
           </div>
         </div>
       </section>
-
-      <!-- Contacts -->
-      <!-- (секция полностью удалена) -->
     </main>
 
     <!-- Подвал -->
@@ -629,15 +573,18 @@
         <div class="footer-extended__nav">
           <h4>Навигация</h4>
           <ul>
-            <li><a href="#about">О нас</a></li>
-            <li><a href="#services">Программы</a></li>
-            <li><a href="#">Пробное занятие</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li><a href="#services">Наши программы</a></li>
+            <li><a href="#team">Наша команда</a></li>
+            <li><a href="#reviews">Отзывы родителей</a></li>
+            <li><a href="#faq">Часто задаваемые вопросы</a></li>
           </ul>
         </div>
-        <div class="footer-extended__contacts">
+        <div id="contacts" class="footer-extended__contacts">
           <h4>Контакты</h4>
-          <p>г. Москва<br />ул. Примерная, 10</p>
+          <p>
+            г. Казань<br />
+            проспект Альберта Камалеева, 8
+          </p>
           <p><a href="tel:+79518926463">+7 (951) 892-64-63</a></p>
           <p><a href="mailto:info@bravepandas.ru">info@bravepandas.ru</a></p>
           <p>WhatsApp</p>
@@ -645,16 +592,6 @@
         </div>
         <div class="footer-extended__subscribe">
           <h4>Новости и акции</h4>
-          <form class="footer-extended__form">
-            <input
-              type="email"
-              placeholder="Ваш email"
-              class="footer-extended__input"
-            />
-            <button type="submit" class="button footer-extended__button">
-              Подписаться
-            </button>
-          </form>
           <a href="#" class="button footer-extended__trial"
             >Бесплатное пробное занятие</a
           >
@@ -669,9 +606,15 @@
         </ul>
       </div>
     </footer>
-    <!-- <div id="app"></div> -->
+    <button class="back-to-top" aria-label="Наверх" title="Наверх">
+      <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 5l-7 7h4v7h6v-7h4z" fill="#fff"></path>
+      </svg>
+    </button>
     <!-- <script type="module" src="/src/main.js"></script> -->
-    <script src="/public/faq.js"></script>
-    <script src="/public/pricing.js"></script>
+    <script src="/src/shared/lib/faq.js"></script>
+    <script src="/src/shared/lib/pricing.js"></script>
+    <script src="/src/shared/lib/backToTop.js"></script>
+    <script src="/src/shared/lib/reviewsCarousel.js"></script>
   </body>
 </html>
